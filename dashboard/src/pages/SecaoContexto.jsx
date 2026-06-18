@@ -29,7 +29,7 @@ function SecaoContexto() {
     },
     {
       titulo: "Financeirização do crédito",
-      corpo: `O setor financeiro ampliou sua participação nas dívidas negativadas de ~37% (2019) para ~${(ultimo.fin_total*100).toFixed(0)}% (jan/2026). As financeiras digitais cresceram +11 pp no período, refletindo maior acesso — e risco — ao crédito.`,
+      corpo: `O setor financeiro ampliou sua participação nas dívidas negativadas de ~37% (2019) para ~46% (jan/2026). As financeiras digitais cresceram +11 pp no período, refletindo maior acesso — e risco — ao crédito.`,
       cor: "#e89c30", icone: "🏦",
     },
     {

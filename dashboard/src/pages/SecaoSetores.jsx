@@ -37,12 +37,23 @@ function SecaoSetores() {
 
   return (
     <div>
+      {/* Contexto */}
+      <div style={{ background: "#f3feef", border: "1px solid #b9dbad", borderRadius: 10, padding: "14px 18px", marginTop: 20, marginBottom: 20, fontSize: 13 }}>
+        <strong>Contexto</strong> 
+        <ul style={{ fontSize: 13}}>
+          <li>Crescimento da participação do mercado financeiro na concessão de créditos</li>
+          <li>Processo de securitização (Dívidas dos clientes = Ativos negociáveis)</li>
+          <li>Priorização do lucro sobre a função social do crédito</li>
+          <li>Consumidores criam relação de dependência com os mecanismos financeiros (exemplo: financiamento das dívidas)</li>
+        </ul>
+      </div>
+
       {/* Pie charts comparativos */}
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 20 }}>
         {[{ title: "2019", data: pieData2019 }, { title: "2026", data: pieData2026 }].map(({ title, data }) => (
           <div key={title} style={{ background: "#fff", borderRadius: 12, padding: "20px", boxShadow: "0 2px 10px rgba(0,0,0,.07)", textAlign: "center" }}>
             <h3 style={{ margin: "0 0 12px", fontSize: 14, color: COLORS.preto }}>Participação por Capital – {title}</h3>
-            <ResponsiveContainer width="100%" height={200}>
+            <ResponsiveContainer width="100%" height={250}>
               <PieChart>
                 <Pie data={data} cx="50%" cy="50%" innerRadius={55} outerRadius={80} paddingAngle={3} dataKey="value" label={({ name, value }) => `${name}: ${(value*100).toFixed(1)}%`} labelLine={false}>
                   {data.map((_, i) => <Cell key={i} fill={pieColors[i]} />)}
@@ -98,6 +109,8 @@ function SecaoSetores() {
       <div style={{ background: "#fef9ef", border: "1px solid #f0d988", borderRadius: 10, padding: "14px 18px", marginTop: 16, fontSize: 13 }}>
         <strong>💡 Insight:</strong> O setor <strong>financeiro aumentou sua participação de ~37% para ~46%</strong> entre 2019 e 2026, enquanto telefonia caiu de ~13% para ~5%. As <strong>financeiras</strong> foram o segmento com maior crescimento individual (+11 pp), refletindo a expansão do crédito digital.
       </div>
+
+
     </div>
   );
 }
