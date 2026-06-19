@@ -44,7 +44,7 @@ function SecaoSetores() {
           <li>Crescimento da participação do mercado financeiro na concessão de créditos</li>
           <li>Processo de securitização (Dívidas dos clientes = Ativos negociáveis)</li>
           <li>Priorização do lucro sobre a função social do crédito</li>
-          <li>Consumidores criam relação de dependência com os mecanismos financeiros (exemplo: financiamento das dívidas)</li>
+          <li>Consumidores criam relação de dependência com os mecanismos financeiros</li>
         </ul>
       </div>
 
